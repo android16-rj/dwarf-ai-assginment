@@ -4,6 +4,12 @@ hypothesis considered:
 there are images where hands or legs are raised/folded so we cannot rely on the wrist, elbow, knee, ankle, etc.
 so i've considered only using coordinates of fixed landmarks like nose, ear,shoulder and eyes.
 
+### Annoted data for head in the images using labelImages.
+- Made dataframe from annotation.
+- 4 new cols viz, Head_x, Head_y, Head_w, Head_h, created
+- other key points hold no significance so only coordinates of bbox of head annoted.
+
+
 # Exploring height and pose dataset
 
 - pose column contains several metadata
@@ -25,7 +31,8 @@ Finally after merging datasets, there are 35 cols
 		'Right_hip_y', 'Nose_p', 'Left_eye_p', 'Right_eye_p', 
 		'Left_ear_p', 'Right_ear_p', 'Left_shoulder_p',
             'Right_shoulder_p', 'Left_hip_p', 'Right_hip_p'
-		'Depthmap Image', 'Height(cm)'
+		'Depthmap Image', 'Height(cm)', 'Head_x',
+		'Head_y', 'Head_w', 'Head_h'
 		* Here cols with p suffix are probability score of detecting landmarks.
 
 # Data Preprocessing
