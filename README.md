@@ -57,6 +57,6 @@ I've used a observation from our dataset.
 where actual height is 100.6 cms.
 and our model predicted 97.78 cms
 
-pretty close. it only differ by 3.4 cms
+pretty close. it only differ by 3.4 cms.
 
 refer height_prediction.ipynb file for details.
